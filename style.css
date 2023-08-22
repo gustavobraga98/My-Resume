@@ -1,0 +1,57 @@
+body {
+    background-color: #EEEEEE;
+}
+
+#nav-bar {
+    background-color: #232931;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: #393E46;
+}
+
+#my-name {
+    color: white;
+    align-self: center;
+    font-size: 15px;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+header {
+    display: inline;
+}
+
+.flex-container{
+    display: flex;
+    height: auto;
+}
+
+.fs-4 {
+    color: white;
+}
+
+.nav-link {
+    color: white;
+}
+
+.carousel-item {
+    height: 400px;
+    margin-bottom: 64px;
+}
+
+.carousel-item img {
+    object-fit: cover;
+}
+
+.btn-color {
+    background-color: #4ECCA3;
+}
+
+.carousel-indicators .not-active {
+    background-color: #393E46;
+}
+.carousel-indicators .active {
+    background-color: #4ECCA3;
+}
+

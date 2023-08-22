@@ -3,80 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Resume</title>
+    <title>Gustavo Braga</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <img height="150" src="images/me.jpg" alt="A photo depicting me.">
-    <h1>Gustavo Braga</h1>
-        <h2>Summary</h2>
-        <p> Electrical Engineer with a focus on machine learning and robotics. Skilled in Python, ROS, LLMs, machine learning and deep learning algorithms as well as Python OpenCV.</p>
-        
-        <h3>Contact Me:</h3>
-        <a href="https://www.linkedin.com/in/gustavo-reis-braga-52775516b/">Linkedin</a>
-        <hr>
-        
-        <h2>Work Experience</h2>
+    <section id="nav-bar">
+            <div class="container">
+                <header class="d-flex flex-wrap justify-content-center py-3">
+                  <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                    <span class="fs-4">Gustavo Braga</span>
+                  </a>
+                  
+                  <ul class="nav nav-pills">
+                    <li class="nav-item"><a href="./index.html" class="nav-link active" aria-current="page">Projects</a></li>
+                    <li class="nav-item"><a href="./public/resume.html" class="nav-link">Resume</a></li>
+                    <li class="nav-item"><a href="./downloads/Gustavo Braga - Resume.pdf" class="nav-link" download>Download CV</a></li>
+                  </ul>
+                </header>
+              </div>
+            </div>
+    </section>
 
-        <ul>
 
-            <li><h3>Artificial Intelligence Researcher, Mr.Turing, Remote</h3></li>
-            April 2023 - present
-            <ul>
-                <li>Research and development of diarization and NLP models</li>
-                <li>Research and development of products with Large Language Model agents for autonomous activities</li>
-                <li>Research and Development of voice recognition and transcription algorithms (Whisper AI)</li>
-            </ul>
-            
-            <li><h3>Co-Founder & Machine Learning Engineer, Kevares Autonomous inc, Remote</h3></li>
-            March 2021 - present
-            <ul>
-                <li>Creates, develops and maintains the entire robot sensor stack</li>
-                <li>Creates, develops artificial intelligence algorithm</li>
-                <li>Creates, develops and maintains algorithms for measurements using RGBD cameras and OpenCV</li>
-                <li>Develops and maintains data infrastructure</li>
-            </ul>
+    <section id="Welcome">
+      <div class="px-4 py-5 my-5 text-center">
+        <img class="rounded-circle mx-auto mb-4" src="images/me.jpg" alt="" width="100" height="100">
+        <h1 class="display-5 fw-bold text-body-emphasis">Welcome!</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">This is my portfolio website. Check below my recent projects!
+            If you had any interest, please let me know! Here are my social medias. You can also check more on my Resume.
+          </p>
+          
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <a href=""><i class="fa-brands fa-linkedin fa-2xl" style="color: #4ecca3;"></i></a>
+            <a href=""><i class="fa-brands fa-github fa-2xl" style="color: #4ecca3;"></i></a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="gallery">
+            <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="not-active" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=" not-active active" aria-current="true"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class="not-active"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active carousel-item-start">
+                  <img src="images/projects/haard-cascade-navigation.png" alt="" class="bd-placeholder-img" width="100%" height="100%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+                  <div class="container">
+                    <div class="carousel-caption text-start">
+                      <h1>Hand Gesture Robot Navigation</h1>
+                      <p class="opacity-75">Hand Gesture Navigation utilizing Haar Cascade Algorithm</p>
+                      <p><a class="btn btn-lg btn-primary btn-color" href="#">Learn more</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item carousel-item-next carousel-item-start">
+                  <img src="images/projects/petrobras-drone-challenge.jpg" alt="" class="bd-placeholder-img" width="100%" height="100%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+                  <div class="container">
+                    <div class="carousel-caption">
+                      <h1>Petrobras Drone Challenge</h1>
+                      <p>Competition to develop an autonomous drone in order to provide maintence in oil rig platforms</p>
+                      <p><a class="btn btn-lg btn-primary btn-color" href="#">Learn more</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="images/projects/hacked-neato-xv-11.jpg" alt="" class="bd-placeholder-img" width="100%" height="100%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+                  <div class="container">
+                    <div class="carousel-caption text-end">
+                      <h1>Neato-XV Hacking</h1>
+                      <p>Trying to give life to a broken autonomous cleaning robot</p>
+                      <p><a class="btn btn-lg btn-primary btn-color" href="#">Learn more</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+    </section>
     
-            <li><h3>Intern, DataH, Remote</h3></li>
-            June 2022 - May 2023
-            <ul>
-                <li>Creation and development of pipelines for identifying people in videos/images</li>
-                <li>Prototyping and 3D Printing</li>
-                <li>Creation and development of Embedding/Tokenization algorithms for classification of scientific articles</li>    
-                <li>Creation and development of algorithms that use/increase the applications of GPT-3/GPT-4</li>    
-                <li>Prompt Engineering (GPT-3/GPT-4)</li>
-            </ul>
-        
-        </ul>
 
-        <hr>
-        <h2>Education</h2>
-
-        <p>
-            <ul>
-                <li>Bachelor, Universidade Federal de São João Del Rei (August 2017 - present)</li>
-            </ul>
-        </p>
-        <hr>
-        <h2>Skills</h2>
-        <ul>
-            <li>Python</li>
-            <li>HTML & CSS</li>
-            <li>Git</li>
-            <li>ROS</li>
-            <li>Javascript</li>
-            <li>English</li>
-            <li>Fusion360</li>
-        </ul>
-        <h2>Certifications</h2>
-        <hr>
-        <ul><li><a href="https://sipac.ufsj.edu.br/public/jsp/autenticidade/documento.jsf">Development of an Individual Identification system using channel State Information</a></li></ul>
-
-    <hr>
-    <h2>Other</h2>
-    <ul>
-        <li><a href="/public/projects.html">Projects</a></li>
-    </ul>
-
-<footer><p>© Gustavo Braga. All rights reserved.</p></footer>   
+    <section id="show-case">
+ 
+            
+            
+                <!-- START THE FEATURETTES -->
+            
+                <hr class="featurette-divider">
+            
+                <div class="row featurette">
+                  <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading fw-normal lh-1">Hand Gesture Robot Navigation</h2>
+                    <p class="lead">Hand Gesture Navigation utilizing Haar Cascade Algorithm</p>
+                  </div>
+                  <div class="col-md-5">
+                    <img src="images/projects/haard-cascade-navigation.png" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="300" height="300" preserveAspectRatio="xMidYMid slice" focusable="false">
+                  </div>
+                </div>
+            
+                <hr class="featurette-divider">
+            
+                <div class="row featurette">
+                  <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading fw-normal lh-1">Neato-XV Hacking</h2>
+                    <p class="lead">Trying to give life to a broken autonomous cleaning robot</p>
+                  </div>
+                  <div class="col-md-5 order-md-1">
+                    <img src="images/projects/hacked-neato-xv-11.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="300" height="300" preserveAspectRatio="xMidYMid slice" focusable="false">
+                  </div>
+                </div>
+            
+                <hr class="featurette-divider">
+            
+                <div class="row featurette">
+                  <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading fw-normal lh-1">Petrobras Drone Challenge</h2>
+                    <p class="lead">Competition to develop an autonomous drone in order to provide maintence in oil rig platforms</p>
+                  </div>
+                  <div class="col-md-5">
+                    <img src="images/projects/petrobras-drone-challenge.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="300" height="300" preserveAspectRatio="xMidYMid slice" focusable="false">
+                  </div>
+                </div>
+            
+                <hr class="featurette-divider">
+            
+                <!-- /END THE FEATURETTES -->
+            
+              </div><!-- /.container -->
+    </section>
+    
+    <section id="footer">
+        <!-- FOOTER -->
+        <footer class="container">
+            <p class="float-end"><a href="#">Back to top</a></p>
+            <p>© Gustavo Braga · All rights reserved
+          </footer>
+    </section>
 </body>
 </html>
